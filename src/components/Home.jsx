@@ -7,9 +7,17 @@ const scrollToMiddle = (event) => {
       behavior: 'smooth',
     });
   };
-
-function Home() {
-    return (
+  import { useEffect } from "react";
+  import { useLocation } from "react-router-dom";
+  
+  function Home() {
+      const { pathname } = useLocation();
+  
+      useEffect(() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+      }, [pathname]);
+  
+      return (
         <div>
             <section className="section-2">
                 <img
