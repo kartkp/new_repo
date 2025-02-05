@@ -76,7 +76,7 @@ const Notes = () => {
 
     if (loading) {
         return (
-            <div>
+            <div><br/><br/><br/>
                 <h2>Loading...</h2>
                 {animalImage && (
                     <img src={animalImage} alt="Random Animal" className="animal-img animated-blink" />

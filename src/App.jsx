@@ -8,6 +8,8 @@ import Response from './components/Response';
 import Navbar from './components/Navbar';
 import Quizpage from './components/Quizpage';
 import Resultpage from './components/Resultpage';
+import Grammer from './components/Grammer';
+import Grammerscore from './components/Grammerscore';
 
 
 
@@ -62,6 +64,14 @@ function App() {
     {
       path: "/task",
       element: <><Navbar/><Task /></>
+    },
+    {
+      path: "/grammer",
+      element: <><Navbar/><Grammer /></>
+    },
+    {
+      path: "/grammerresponse",
+      element: <><Navbar/><Grammerscore /></>
     },
 
     // {

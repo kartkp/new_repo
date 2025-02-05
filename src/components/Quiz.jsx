@@ -104,7 +104,7 @@ function Quiz() {
   if (loading) {
     return (
       <div>
-        <br/><br/>
+        <br/><br/><br/>
         <h2>Loading...</h2>
         {animalImage && (
           <img src={animalImage} alt="Random Animal" className="animal-img animated-blink" />

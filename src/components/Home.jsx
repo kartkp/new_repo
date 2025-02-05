@@ -48,7 +48,7 @@ const scrollToMiddle = (event) => {
                                     <li><a href="enhancer" className="nav-link-4">Note Enhancer</a></li>
                                     <li className="list-item"><a href="/quiz" className="nav-link-4">Quizz</a></li>
                                     <li><a href="task" className="nav-link-4">Task</a></li>
-                                    <li><a href="#" className="nav-link-4">Grammar</a></li>
+                                    <li><a href="/grammer" className="nav-link-4">Grammar</a></li>
                                     <li className="mobile-margin-top-12">
                                         <div className="nav-button-wrapper">
                                             <a href="#" className="button-primary-5 w-button">Register</a>
