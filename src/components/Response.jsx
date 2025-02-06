@@ -58,7 +58,7 @@ function Response() {
       const formData = new FormData();
       formData.append('notes', blob, 'response.pdf');
   
-      const uploadResponse = await fetch('http://localhost:3003/upload', {
+      const uploadResponse = await fetch('https://server-deploy-nw8p.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
@@ -114,7 +114,7 @@ function Response() {
       const formData = new FormData();
       formData.append('notes', blob, 'response.pdf');
 
-      const uploadResponse = await fetch('http://localhost:3003/upload', {
+      const uploadResponse = await fetch('https://server-deploy-nw8p.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
