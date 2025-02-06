@@ -66,7 +66,7 @@ function Grammer() {
     formData.append('role', jobRole);
 
     setTimeout(() => {
-      fetch('https://ai-mocker-backend.onrender.com/upload', {
+      fetch('http://localhost:3002/upload', {
         method: 'POST',
         body: formData,
       })
