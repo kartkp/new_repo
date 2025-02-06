@@ -58,7 +58,7 @@ function Response() {
       const formData = new FormData();
       formData.append('notes', blob, 'response.pdf');
   
-      const uploadResponse = await fetch('http://localhost:3001/upload', {
+      const uploadResponse = await fetch('http://localhost:3003/upload', {
         method: 'POST',
         body: formData,
       });
@@ -114,7 +114,7 @@ function Response() {
       const formData = new FormData();
       formData.append('notes', blob, 'response.pdf');
 
-      const uploadResponse = await fetch('http://localhost:3000/upload', {
+      const uploadResponse = await fetch('http://localhost:3003/upload', {
         method: 'POST',
         body: formData,
       });
@@ -139,7 +139,7 @@ function Response() {
     console.log('Text to be converted to speech:', pdfText);
 
     try {
-      const response = await fetch('http://localhost:3000/tts', {
+      const response = await fetch('http://localhost:3003/tts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: pdfText }),
