@@ -41,11 +41,18 @@ function Quiz() {
     formData.append('numQuestions', numQuestions);
     formData.append('language', language);
 
-    try {
+    // try {
+    //   const response = await fetch('http://localhost:3001/upload', {
+    //     method: 'POST',
+    //     body: formData,
+    //   });
+
+        try {
       const response = await fetch('https://server-dep-cwjr.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
+
 
       if (!response.ok) {
         throw new Error('Network response was not ok');
