@@ -65,8 +65,13 @@ function Grammer() {
     formData.append('jd', jobDescription);
     formData.append('role', jobRole);
 
-    setTimeout(() => {
-      fetch('http://localhost:3002/upload', {
+    // setTimeout(() => {
+    //   fetch('http://localhost:3002/upload', {
+    //     method: 'POST',
+    //     body: formData,
+    //   })
+        setTimeout(() => {
+      fetch('https://ai-mocker-backend.onrender.com/upload', {
         method: 'POST',
         body: formData,
       })
