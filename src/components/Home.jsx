@@ -9,8 +9,11 @@ const scrollToMiddle = (event) => {
   };
   import { useEffect } from "react";
   import { useLocation } from "react-router-dom";
-  
+
+import { useAuth0 } from "@auth0/auth0-react";
+
   function Home() {
+    const { loginWithRedirect } = useAuth0();
       const { pathname } = useLocation();
   
       useEffect(() => {
@@ -29,40 +32,7 @@ const scrollToMiddle = (event) => {
                     className="image-3"
                 />
             </section>
-            <div className="navbar">
-                <div className="navbar-no-shadow-container-2 w-nav">
-                    <div className="container-regular-2">
-                        <div className="navbar-wrapper-3">
-                        <a href="#" className="navbar-brand-2 w-nav-brand">
-    <img
-        src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1725003949/logo_rhifri.png"
-        loading="lazy"
-        alt=""
-        style={{ width: "60px", height: "auto" }}
-    />
-</a>
-
-                            <nav role="navigation" className="nav-menu-wrapper-2 w-nav-menu">
-                                <ul role="list" className="nav-menu w-list-unstyled">
-                                    <li><a href="/" className="nav-link-4">Home</a></li>
-                                    <li><a href="enhancer" className="nav-link-4">Note Enhancer</a></li>
-                                    <li className="list-item"><a href="/quiz" className="nav-link-4">Quizz</a></li>
-                                    <li><a href="task" className="nav-link-4">Task</a></li>
-                                    <li><a href="/grammer" className="nav-link-4">Grammar</a></li>
-                                    <li className="mobile-margin-top-12">
-                                        <div className="nav-button-wrapper">
-                                            <a href="#" className="button-primary-5 w-button">Register</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <div className="menu-button-3 w-nav-button">
-                                <div className="icon w-icon-nav-menu"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          
             <section className="section">
       <div className="container-5">
         <div className="hero-wrapper-4">
@@ -257,7 +227,7 @@ const scrollToMiddle = (event) => {
                             <h3 className="heading">Why Choose BrightWays?</h3>
                             <p className="features-paragraph">We aim to inspire, motivate, and adapt to each student’s unique journey, fostering a supportive and enriching experience.<br /></p>
                             <div className="text-block-2">Brightways is designed to make learning simpler, engaging, and accessible for all.</div>
-                            <a href="#" className="text-link-arrow-2 w-inline-block">
+                            <a href="/features" className="text-link-arrow-2 w-inline-block">
                                 <div className="text-block-3">Learn more</div>
                                 <div className="arrow-embed-2 w-embed">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,61 +275,91 @@ const scrollToMiddle = (event) => {
                 </div>
             </section>
             <section className="hero-subscribe-left-2">
-                <div className="container-5">
-                    <div className="hero-wrapper-4">
-                        <div className="hero-split-4">
-                            <h1 className="heading-2">Ready to Start Your Journey?</h1>
-                            <p className="my-p registory-class left-align">Sign up for a free trial and explore how <br />Brightways can transform your study experience.</p>
-                            <div className="hero-form-2 w-form">
-                                <form id="wf-form-Hero-Form" name="wf-form-Hero-Form" data-name="Hero Form" method="get" className="hero-form-container-2" data-wf-page-id="67892ad20b79c099e7f3f25f" data-wf-element-id="212a046d-4080-5315-1f11-b272b3ade853" data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e">
-                                    <input
-                                        className="hero-form-input-2 shadow w-input"
-                                        maxLength="256"
-                                        name="Hero-Email"
-                                        data-name="Hero Email"
-                                        aria-label="Enter your email"
-                                        placeholder="Enter your email"
-                                        type="email"
-                                        id="Hero-Email"
-                                        required
-                                    />
-                                    <input type="submit" data-wait="Please wait..." className="button-primary-6 w-button" value="Join Now" />
-                                </form>
-                                <div className="w-form-done">
-                                    <div>Thank you! Your submission has been received!</div>
-                                </div>
-                                <div className="w-form-fail">
-                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                </div>
-                            </div>
-                            <a href="#" className="text-link-arrow-2 w-inline-block">
-                                <div className="text-block-4">or Sign-up with Google</div>
-                                <div className="arrow-embed-2 w-embed">
-                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.13 8.5L6.87296 4.24291L5.87067 5.24379L9.129 8.5L5.87067 11.7555L6.87225 12.7571L11.13 8.5Z" fill="currentColor" />
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="hero-split-4">
-                            <img
-                                src="https://cdn.prod.website-files.com/67892ad20b79c099e7f3f24f/6796a81758e0430e7624f88e_freepik__the-style-is-candid-image-photography-with-natural__97824.jpg"
-                                loading ="lazy"
-                                sizes="(max-width: 767px) 131.328125px, (max-width: 991px) 42vw, (max-width: 1439px) 43vw, 432.375px"
-                                srcSet="https://cdn.prod.website-files.com/67892ad20b79c099e7f3f24f/6796a81758e0430e7624f88e_freepik__the-style-is-candid-image-photography-with-natural__97824-p-500.jpg 500w, https://cdn.prod.website-files.com/67892ad20b79c099e7f3f24f/6796a81758e0430e7624f88e_freepik__the-style-is-candid-image-photography-with-natural__97824-p-800.jpg 800w, https://cdn.prod.website-files.com/67892ad20b79c099e7f3f24f/6796a81758e0430e7624f88e_freepik__the-style-is-candid-image-photography-with-natural__97824.jpg 896w"
-                                alt=""
-                                className="shadow-two-4"
-                            />
-                        </div>
-                    </div>
+        <div className="container-5">
+          <div className="hero-wrapper-4">
+            <div className="hero-split-4">
+              <h1 className="heading-2">Ready to Start Your Journey?</h1>
+              <p className="my-p registory-class left-align">
+                Sign up for a free trial and explore how <br />
+                Brightways can transform your study experience.
+              </p>
+              <div className="hero-form-2 w-form">
+                <form
+                  id="wf-form-Hero-Form"
+                  name="wf-form-Hero-Form"
+                  data-name="Hero Form"
+                  method="get"
+                  className="hero-form-container-2"
+                  data-wf-page-id="67892ad20b79c099e7f3f25f"
+                  data-wf-element-id="212a046d-4080-5315-1f11-b272b3ade853"
+                  data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e"
+                >
+                  <input
+                    className="hero-form-input-2 shadow w-input"
+                    maxLength="256"
+                    name="Hero-Email"
+                    data-name="Hero Email"
+                    aria-label="Enter your email"
+                    placeholder="Enter your email"
+                    type="email"
+                    id="Hero-Email"
+                    required
+                  />
+                  <input
+                    type="submit"
+                    data-wait="Please wait..."
+                    className="button-primary-6 w-button"
+                    value="Join Now"
+                  />
+                </form>
+                <div className="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
                 </div>
-            </section>
+                <div className="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+              <a
+                href="#"
+                className="text-link-arrow-2 w-inline-block"
+                onClick={() => loginWithRedirect()}
+              >
+                <div className="text-block-4">or Sign-up with Google</div>
+                <div className="arrow-embed-2 w-embed">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.13 8.5L6.87296 4.24291L5.87067 5.24379L9.129 8.5L5.87067 11.7555L6.87225 12.7571L11.13 8.5Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div className="hero-split-4">
+              <img
+                src="https://cdn.prod.website-files.com/67892ad20b79c099e7f3f24f/6796a81758e0430e7624f88e_freepik__the-style-is-candid-image-photography-with-natural__97824.jpg"
+                loading="lazy"
+                sizes="(max-width: 767px) 131.328125px, (max-width: 991px) 42vw, (max-width: 1439px) 43vw, 432.375px"
+                srcSet="https://cdn.prod.website-files.com/67892ad20b79c099e7f3f24f/6796a81758e0430e7624f88e_freepik__the-style-is-candid-image-photography-with-natural__97824-p-500.jpg 500w, https://cdn.prod.website-files.com/67892ad20b79c099e7f3f24f/6796a81758e0430e7624f88e_freepik__the-style-is-candid-image-photography-with-natural__97824-p-800.jpg 800w, https://cdn.prod.website-files.com/67892ad20b79c099e7f3f24f/6796a81758e0430e7624f88e_freepik__the-style-is-candid-image-photography-with-natural__97824.jpg 896w"
+                alt=""
+                className="shadow-two-4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
             <section className="footer-subscribe-2">
                 <div className="container-5">
                     <div className="footer-wrapper-three-2">
                         <div className="footer-block-three-2">
-                            <a href="#" className="footer-link-three-2">About us</a>
-                            <a href="#" className="footer-link-three-2">Features</a>
+                            <a href="/about" className="footer-link-three-2">About us</a>
+                            <a href="features" className="footer-link-three-2">Features</a>
                         </div>
                         <div className="footer-social-block-three-2">
                             <a href="#" className="footer-social-link-three-2 w-inline-block">

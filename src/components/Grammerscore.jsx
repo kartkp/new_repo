@@ -97,7 +97,7 @@ function Grammerscore() {
 
                 <div className="section">
                     <h2 className="section-title">Summary</h2>
-                    <p className="section-content">{profileSummary}</p>
+                    <p className="section-contenty">{profileSummary}</p>
                 </div>
 
                 <button type="button" onClick={() => navigate('/grammer')} className="response-button">

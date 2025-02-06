@@ -78,14 +78,27 @@ body {
 }
 
 .section-title {
+    margin-top: -200px; 
     font-size: 1.4rem;
     color: #2c3e50;
-    margin-bottom: 15px;
     border-bottom: 2px solid #e6e6e6;
     padding-bottom: 10px;
 }
 
+.section-contenty{
+   
+    margin-left: -100px;
+    margin-right: 15%;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+
+}
+
 .section-content {
+    margin-top: 100px;
+    margin-left: -150px;
+    margin-right: 15%;
     font-size: 1.1rem;
     color: #555;
     line-height: 1.8;
@@ -147,7 +160,7 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
     .response-container {
         padding: 20px;
