@@ -52,7 +52,11 @@ const Notes = () => {
         if (imageFile) formData.append("image", imageFile);
         formData.append("prompt", prompt || "English");
 
-        fetch("https://server-deploy-nw8p.onrender.com/upload", {
+        // fetch("http://localhost:3003/upload", {
+        //     method: "POST",
+        //     body: formData,
+        // })
+                fetch("https://server-deploy-nw8p.onrender.com/upload", {
             method: "POST",
             body: formData,
         })
