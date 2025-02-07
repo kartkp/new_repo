@@ -62,14 +62,14 @@ const Task = () => {
         formData.append("prompt", prompt || "English");
         formData.append("watermark", watermark);
 
-        fetch("http://localhost:3000/upload", {
-            method: "POST",
-            body: formData,
-        })
-        //         fetch("https://random-prompt.onrender.com/upload", {
+        // fetch("http://localhost:3000/upload", {
         //     method: "POST",
         //     body: formData,
         // })
+                fetch("https://random-prompt.onrender.com/upload", {
+            method: "POST",
+            body: formData,
+        })
             .then((response) => {
                 if (response.ok) return response.blob();
                 throw new Error("Error generating PDF");
