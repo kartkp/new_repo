@@ -16,11 +16,7 @@ const Aboutus = () => {
             alt="Album 1"
             className="w-48 h-48 rounded-2xl shadow-lg transform transition-transform hover:scale-105"
           />
-          <img
-            src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1738867467/team.png_lyt8n5.jpg"
-            alt="Album 2"
-            className="w-48 h-48 rounded-2xl shadow-lg transform transition-transform hover:scale-105"
-          />
+
         </div>
       </div>
     </div>
