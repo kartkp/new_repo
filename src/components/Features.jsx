@@ -14,13 +14,13 @@ const Features = () => {
           src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1738867469/BrightWays_pzlwe7.png"
           alt="BrightWays"
           className="w-1/2 rounded-2xl shadow-lg"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
         />
         <motion.img
           src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1738867469/features_vtdnaw.png"
           alt="Features"
           className="w-1/2 rounded-2xl shadow-lg"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
         />
       </div>
     </div>
